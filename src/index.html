@@ -4,28 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zoo Dabou</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body>
-    <header>
-        <img src="assets/Logo.svg" alt="Logo du Zoo de Dabou" />
+<body class="container">
+    <!--START : header-->
+    <header class="row justify-content">
+        <img 
+        class="col-3" 
+        src="assets/img/Logo.svg" 
+        alt="Logo du Zoo de Dabou" 
+        />
 
-        <nav>
-            <ul>
-                <li>
-                    <a href="accueil.html">ACCUEIL</a>
+        <nav class="col">
+            <ul class="header__list-link">
+                <li class="header__link">
+                    <a href="accueil.html">Accueil</a>
                 </li>
-                <li>
-                    <a href="services.html">SERVICES</a>
+                <li class="header__link">
+                    <a href="services.html">Services</a>
                 </li>
-                <li>
-                    <a href="habitats.html">HABITATS</a>
+                <li class="header__link">
+                    <a href="habitats.html">Habitats</a>
                 </li>
-                <li>
-                    <a href="contacts.html">CONTACTS</a>
+                <li class="header__link">
+                    <a href="contacts.html">Contacts</a>
                 </li>
             </ul>
         </nav>
+        
+        <button class="col-1 align-self-center" type="button">Connexion</button>
     </header>
+    <!--END : header-->
+
+    <!--START : main-->
+    <main>
+        <!--START : hero-->
+        <section class="clearfix py-5">
+        <img src="assets/img/monkey.svg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="Photo d'un petit singe" />
+            
+        
+            <h1>Découvrez un monde sauvage fascinant!</h1>
+            <p>Le zoo de Dabou couvre une superficie de 80 ha.
+                Soixante ans après sa création, le zoo présente des espèces menacées 
+                et assure des missions de conservation in situ et ex situ, de tranmission du savoir
+                grâce aux actions pédagogiques et de dveloppement de la recherche scientifique.
+                Premier zoo de loisir en Côte d'ivoire avec 150 000 par an, le zoo propose également 
+                plusieurs attractions pour petits et grands: Le Safari train vous emmène photographier 
+                les animaux sauvages, profitez également du restaurant et bien d'autres... 
+                Une aventure exeptionnelle à Dabou à vivre en famille ou entre amis.
+            </p>
+        
+        </section>
+        <!--END : hero-->
+
+
+
+    </main>
+    <!--END : main-->
     
+    <script src="assets/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</div>
 </body>
 </html>

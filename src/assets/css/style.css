@@ -1,0 +1,39 @@
+
+/*START: Reset*/
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+Convention de nommage: BEM
+Block
+Element
+Modifier
+*/
+
+body {
+    background-image: no-repeat center/80% url("src\assets\img\background.png");
+
+}
+.header {
+    background-color: ;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header__list-link {
+    display: flex;
+}
