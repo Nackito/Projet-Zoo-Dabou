@@ -1,39 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Redressed&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/*START: Reset*/
-
-a {
-    text-decoration: none;
-    color: inherit;
+.merienda {
+    font-family: 'Merienda', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+.redressed {
+    font-family: 'Redressed', Arial, Helvetica, sans-serif;
 }
 
-ol, ul {
-    list-style: none;
+.merriweather {
+    font-family: 'Merriweather', 'Roboto', serif;
+}
+.cc-navbar {
+    font-family: 'Merriweather', 'Roboto', serif;
+    box-shadow: 1px 1px 3px rgba(225, 225, 225, 0.54);
+    color: rgb(55, 145, 55);
+    height: 90px;
+    background-color: white;
 }
 
-* {
-    margin: 0;
-    padding: 0;
+.imghead{
+    width: auto;
+    height: 1em; /* ici tu aplique la taille voulue */
+    font-size: 4.5em; /* tu change la taille de ton atl */
+    margin-top: 0;/*ici ton margin pour le centrer*/
+    margin-left: 20px;/* tout comme celui -ci */
 }
 
-/*
-Convention de nommage: BEM
-Block
-Element
-Modifier
-*/
-
-body {
-    background-image: no-repeat center/80% url("src\assets\img\background.png");
-
+.cc-navbar .nav-link {
+    border-bottom: 1px solid transparent;
+    transition: padding-botton 0.4s ease-in-out, border-color 0.3s ease;
 }
-.header {
-    background-color: ;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
+
+.cc-navbar .nav-link:hover {
     padding-bottom: 20px;
+    border-bottom-color: rgb(55, 145, 55);
+    color: rgb(55, 145, 55);
+};
+
+.btn-order {
+    color: var(--bs-teal);
+	border-color: var(--bs-teal);
+	transition: 0.5s;
 }
 
-.header__list-link {
-    display: flex;
+.btn-order:hover,
+.btn-order:focus,
+.btn-order:active {
+	color: #fff;
+	background-color: var(--bs-teal);
+}
+
+.bg-success-subtle {
+    --bs-bg-opacity: 0.3;
+    background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
 }
