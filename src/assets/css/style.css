@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Redressed&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merienda:wght@300..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Redressed&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.kanit {
+    font-family: 'Kanit', 'Roboto', Arial, Helvetica, sans-serif;
+}
 
 .merienda {
     font-family: 'Merienda', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -34,6 +39,12 @@
     transition: padding-botton 0.4s ease-in-out, border-color 0.3s ease;
 }
 
+a {
+    text-decoration: none;
+    color: initial;
+
+}
+
 .cc-navbar .nav-link:hover {
     padding-bottom: 20px;
     border-bottom-color: rgb(55, 145, 55);
@@ -56,4 +67,141 @@
 .bg-success-subtle {
     --bs-bg-opacity: 0.3;
     background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.box {
+    display: inline-block;
+    height: 300px;
+}
+
+.img-cover {
+    max-height: 280px;
+    width: 100%;
+}
+
+/*style page habitat */
+
+.title-cover-mini-ferme {
+    color: rgb(55, 145, 55);
+    font-size: 55px;
+}
+
+/* Style carousel image */
+
+/*.container-carousel {
+    max-width: 1200px;
+    width: 95%;
+}*/
+.slider-wrapper {
+    position: relative;
+    color: #000;
+}
+
+.slider-wrapper .slide-button {
+    position: absolute;
+    top: 50%;
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 40px;
+    z-index: 5;
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    font-size: 2.2rem;
+    background: #000;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+.slider-wrapper .slide-button:hover {
+    background: #404040;
+}
+.slider-wrapper .slide-button#prev-slide {
+    left: -25px;
+    display: none;
+}
+.slider-wrapper .slide-button#next-slide {
+    right: -25px;
+}
+.slider-wrapper .image-list {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 18px;
+    font-size: 0;
+    list-style: none;
+    margin-bottom: 30px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    position: relative;
+}
+
+.slider-wrapper .image-list::-webkit-scrollbar {
+    display: none;
+}
+.slider-wrapper .image-list .image-item {
+    width: 325px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.container-carousel .slider-scrollbar {
+    height: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.slider-scrollbar .scrollbar-track {
+    background: #ccc;
+    width: 100%;
+    height: 2px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    position: relative;
+}
+.slider-scrollbar:hover .scrollbar-track {
+    height: 4px;
+}
+.slider-scrollbar .scrollbar-thumb {
+    position: absolute;
+    background: #000;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+    cursor: grab;
+    border-radius: inherit;
+}
+.slider-scrollbar .scrollbar-thumb:active {
+    cursor: grabbing;
+    height: 8px;
+    top: -2px;
+}
+.slider-scrollbar .scrollbar-thumb::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
+}
+  /* Styles for mobile and tablets */
+@media only screen and (max-width: 1023px) {
+    .slider-wrapper .slide-button {
+        display: none !important;
+    }
+    .slider-wrapper .image-list {
+        gap: 10px;
+        margin-bottom: 15px;
+        scroll-snap-type: x mandatory;
+    }
+    .slider-wrapper .image-list .image-item {
+        width: 280px;
+        height: 380px;
+    }
+    .slider-scrollbar .scrollbar-thumb {
+        width: 20%;
+    }
 }

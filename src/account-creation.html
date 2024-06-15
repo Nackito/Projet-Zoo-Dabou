@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Font awesome cdn css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <!--Font awesome cdn js-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" />
+    
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    
+    
+    <title>Zoo Dabou</title>
+</head>
+
+<style>
+    body {
+        background: url("assets/img/background.svg") center center;
+        background-size: cover;
+    }
+</style>
+
+<body>
+
+    <!--START : header-->
+    <nav class="cc-navbar navbar navbar-expand-lg py-0 text-uppercase w-100">
+        <div class="container">
+            <img class="me-5 imghead"
+            src="assets/img/Logo.svg" 
+            alt="Logo du Zoo de Dabou" 
+            />
+        <button class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarScroll" 
+                aria-controls="navbarScroll" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarScroll">
+        <ul class=" navbar-nav ms-auto my-2 my-lg-0">
+            <li class="nav-item pe-4">
+                <a class="nav-link active" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item pe-4">
+                <a class="nav-link active" href="services.html">Services</a>
+            </li>
+            <li class="nav-item pe-4 dropdown">
+                <a class="nav-link active dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#">Habitats</a>
+                <ul class="dropdown-menu">
+                    <li><a href="habitats-mini-ferme.html" class="dropdown-item">La mini-ferme</a></li>
+                    <li><a href="habitats-espace-tropical.html" class="dropdown-item">L'espace tropical</a></li>
+                    <li><a href="habitats-felins.html" class="dropdown-item">Les felins</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Contacts</a>
+            </li>
+        </ul>
+        
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a href="connexion.html" class="nav-link">Se connecter</a>
+            </li>
+        </ul>
+        </div>
+        </div>
+    </nav>
+    <!--END : header-->
+
+    <!--START : main-->
+    <main class="kanit">
+        <!--START : hero-->
+        <div class="roboto position-relative pb-2">
+            <img src="assets/img/cover-felin.png" class="img-cover" alt="...">
+            <div class="position-absolute bottom-0">
+                <h5 class="title-cover-mini-ferme kanit text-light" >Connexion</h5>
+            </div>
+        </div>
+        <!--END : Hero-->
+            <div class="container text-light">
+                <div class="row mt-5">
+                    <div class="col-lg-4 bg-success-subtle m-auto rounded-top">
+                        <h2 class="text-center">Inscription</h2>
+                        <p class="text-center">Simple et Rapide</p>
+                        <form action="">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Je suis employé
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Je suis vétérinaire
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Je suis administateur
+                                </label>
+                            </div>
+                            <div class="input-group mb-3" >
+                                <span class="input-group-text" ><i class="fa fa-user" ></i></span>
+                                <input type="text" class="form-control" placeholder="Nom" >
+                            </div>
+                            <div class="input-group mb-3" >
+                                <span class="input-group-text" ><i class="fa fa-user" ></i></span>
+                                <input type="text" class="form-control" placeholder="Prenom" >
+                            </div>
+                            <div class="input-group mb-3" >
+                                <span class="input-group-text" ><i class="fa fa-envelope" ></i></span>
+                                <input type="text" class="form-control" placeholder="Email" >
+                            </div>
+                            <div class="input-group mb-3" >
+                                <span class="input-group-text" ><i class="fa fa-lock" ></i></span>
+                                <input type="text" class="form-control" placeholder="Mot de passe" >
+                            </div>
+                            <div class="input-group mb-3" >
+                                <span class="input-group-text" ><i class="fa fa-lock" ></i></span>
+                                <input type="text" class="form-control" placeholder="Confirmation de mot de passe" >
+                            </div>
+                            <div class="d-grid text-light">
+                                <button type="button" class="btn btn-success">Envoyer</button>
+                                <p class="text-center">En cliquant sur Envoyer, 
+                                    vous accepter nos <a href="" class="text-primary">Conditions générales</a>, 
+                                    notre <a href="" class="text-primary">Politique de confidentialité</a> et 
+                                    notre <a href="" class="text-primary">Politique d'utilisation</a> des cookies.
+                                </p>
+                                <p>Vous avez déjà un compte? <a href="form-connexion.html" class="text-primary">Connectez-vous ici</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        
+    </main>
+    <!--END : main-->
+
+    <!--START: footer-->
+    <section class="cc-footer  bg-light py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4 col-sm">
+                    <img class="me-5 imghead"
+                src="assets/img/Logo.svg" 
+                alt="Logo du Zoo de Dabou" 
+                />
+                <p class="redressed pt-3">57 Rue de la paix, Riviera, Abidjan 1001</p>
+                <p class="redressed">(225) 02-35-51-62</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 col-sm">
+                    <h6 class="redressed ps-3 fs-5">Nos Partenaire</h6>
+                    <nav class="nav flex-column">
+                        <a class="nav-link py-1 merriweather fs-6 text-secondary active" aria-current="page" href="#">Active</a>
+                        <a class="nav-link py-1 merriweather fs-6 text-secondary" href="#">Link</a>
+                        <a class="nav-link py-1 merriweather fs-6 text-secondary" href="#">Link</a>
+                        <a class="nav-link py-1 merriweather fs-6 text-secondary disabled" href="#" tabindex="-1" aria-disabled="true"
+                            >Disabled</a
+                        >
+                    </nav>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 col-sm">
+                    <h6 class="redressed ps-3 fs-5">Liens utiles</h6>
+                    <nav class="nav flex-column">
+                        <a class="nav-link py-1 merriweather fs-6 text-secondary active" aria-current="page" href="#">Active</a>
+                        <a class="nav-link py-1 merriweather fs-6 text-secondary" href="#">Link</a>
+                        <a class="nav-link py-1 merriweather fs-6 text-secondary" href="#">Link</a>
+                        <a class="nav-link py-1 merriweather fs-6 text-secondary disabled" href="#" tabindex="-1" aria-disabled="true"
+                            >Disabled</a
+                        >
+                    </nav>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 col-sm">
+                    <h6 class="redressed ps-3 fs-5">Nos Offres</h6>
+                    <nav class="nav flex-column">
+                        <a class="nav-link py-1 merriweather fs-6 text-secondary active" aria-current="page" href="#">Active</a>
+                        <a class="nav-link py-1 merriweather fs-6 text-secondary" href="#">Link</a>
+                        <a class="nav-link py-1 merriweather fs-6 text-secondary" href="#">Link</a>
+                        <a class="nav-link py-1 merriweather fs-6 text-secondary disabled" href="#" tabindex="-1" aria-disabled="true"
+                            >Disabled</a
+                        >
+                    </nav>
+                </div>
+                <div class="col-12 text-center py-4 text-muted">
+                    &copy; Debamba
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                    Copyright
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END: footer-->
+    
+    <script src="assets/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </div>
+</body>
+</html>

@@ -25,52 +25,177 @@
 <body>
 
     <!--START : header-->
-        <nav class="cc-navbar navbar navbar-expand-lg py-0 text-uppercase w-100">
-            <div class="container">
-                <img class="me-5 imghead"
-                src="assets/img/Logo.svg" 
-                alt="Logo du Zoo de Dabou" 
-                />
-            <button class="navbar-toggler" 
-                    type="button" 
-                    data-bs-toggle="collapse" 
-                    data-bs-target="#navbarScroll" 
-                    aria-controls="navbarScroll" 
-                    aria-expanded="false" 
-                    aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse " id="navbarScroll">
-            <ul class=" navbar-nav ms-auto my-2 my-lg-0">
-                <li class="nav-item pe-4">
-                    <a class="nav-link active" href="index.html">Accueil</a>
-                </li>
-                <li class="nav-item pe-4">
-                    <a class="nav-link active" href="services.html">Services</a>
-                </li>
-                <li class="nav-item pe-4">
-                    <a class="nav-link active" href="#">Habitats</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Contacts</a>
-                </li>
-            </ul>
-            
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Se connecter</a>
-                </li>
-            </ul>
-            </div>
-            </div>
-        </nav>
+    <nav class="cc-navbar navbar navbar-expand-lg py-0 text-uppercase w-100">
+        <div class="container">
+            <img class="me-5 imghead"
+            src="assets/img/Logo.svg" 
+            alt="Logo du Zoo de Dabou" 
+            />
+        <button class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarScroll" 
+                aria-controls="navbarScroll" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarScroll">
+        <ul class=" navbar-nav ms-auto my-2 my-lg-0">
+            <li class="nav-item pe-4">
+                <a class="nav-link active" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item pe-4">
+                <a class="nav-link active" href="services.html">Services</a>
+            </li>
+            <li class="nav-item pe-4 dropdown">
+                <a class="nav-link active dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#">Habitats</a>
+                <ul class="dropdown-menu">
+                    <li><a href="habitats-mini-ferme.html" class="dropdown-item">La mini-ferme</a></li>
+                    <li><a href="habitats-espace-tropical.html" class="dropdown-item">L'espace tropical</a></li>
+                    <li><a href="habitats-felins.html" class="dropdown-item">Les felins</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Contacts</a>
+            </li>
+        </ul>
+        
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a href="connexion.html" class="nav-link">Se connecter</a>
+            </li>
+        </ul>
+        </div>
+        </div>
+    </nav>
     <!--END : header-->
 
     <!--START : main-->
     <main>
-        <!--START : hero-->
 
-        <!--END : hero-->
+<!--START : hero-->
+    <section class="p-5 text-light">
+    <div class="container pt-5">
+        <div class="clearfix">
+            <img class="col-md-4 w-30 me-5 float-md-start mb-3 ms-md-3 img-monkey rounded-2 object-fit-scale" src="assets/img/tortue.jpg" alt="Photo d'un homme qui nourrit une tortue" />
+                <div class="text-align-center">
+                    <h1 class="p-2 fw-bolder">Découvrez le ZooParc depuis les coulisses</h1>
+                    <p>Préparez-vous à vivre une expérience inoubliable en participant aux activités du ZooParc de Beauval. 
+                        Vous y découvrirez le zoo et ses animaux d’une façon unique. Accompagné par nos équipes de médiateurs scientifiques, participez aux soins des animaux (nourrissages, nettoyages des espaces, créations d’enrichissements…).
+                    </p>
+                </div>
+        </div>
+    </di>
+    </section>
+<!--END : hero-->
+
+    <section class="available merriweather py-5">
+    <div class="container">
+        <div class="row">
+            <div class="card mb-3 border-0 rounded-0 bg-success-subtle text-light">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="assets/img/Safari-train-3.jpg" class="img-fluid" alt="..." />
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body px-0">
+                            <h3 class="card-title">Le Safari train</h3>
+                            <p class="card-text">
+                                Embarquez à bord de ce Safari Train, le temps d’un tour du monde. 
+                                Tout au long de cette escapade vous croiserez bisons, rennes, géladas, 
+                                lycaons, girafes, rhinocéros et autres animaux insolites ! 
+                                Ce parcours original vous permettra de mieux observer les animaux et de les photographier à loisir.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card my-5 border-0 rounded-0 bg-success-subtle text-light">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card-body px-0">
+                            <h3 class="card-title">Restaurant Debambus</h3>
+                            <p class="card-text">
+                                La pagode vous propose une formule Buffet à volonté (entrées, plats, fromages, desserts hors boissons).
+                                Moyens de paiements acceptés dans ce restaurant :
+                                <ul>
+                                    <li>Espèces, Cartes bancaires (Sauf American Express),</li>
+                                    <li>Tickets Restaurants,</li>
+                                    <li>Chèques déjeuner,</li>
+                                    <li>Chèques vacances ANCV.</li>
+                                </ul>
+                                Le restaurant du Zoo n'accepte pas les chèques
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/img/restaurant.jpg" class="d-block w-100" alt="..." />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/restaurant-3.jpg" class="d-block w-100" alt="..." />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/restaurant-2.jpg" class="d-block w-100" alt="..." />
+                                </div>
+                            </div>
+                            <button
+                                class="carousel-control-prev"
+                                type="button"
+                                data-bs-target="#carouselExampleControls"
+                                data-bs-slide="prev"
+                            >
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button
+                                class="carousel-control-next"
+                                type="button"
+                                data-bs-target="#carouselExampleControls"
+                                data-bs-slide="next"
+                            >
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card mb-3 border-0 rounded-0 bg-success-subtle text-light">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="assets/img/restaurant.jpg" class="img-fluid" alt="..." />
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body px-0">
+                            <h3 class="card-title">Visite des habitats avec guide</h3>
+                            <p class="card-text">
+                                Le Zoo Dabou vous propose une visite conviviale et instructive adaptée aux groupes d’enfants, adultes, séniors …
+                                Un journée type:
+                                <ul>
+                                    <li>10h00 arrivée au Zoo</li>
+                                    <li>12h00 Safari train privatisé pour votre groupe</li>
+                                    <li>12h30 Repas à La Pagode (Nous venons vous chercher à la sortie du train pour vous accompagner)</li>
+                                    <li>14h30 Visite de l'habitat "Les felins"</li>
+                                    <li>14h45 Visite de l'habitat "Les Naissances"</li>
+                                    <li>15h00 Visite de l'habitat "La mini-ferme"</li>
+                                    <li>15h30 Le depart</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
     </main>
     <!--END : main-->
 

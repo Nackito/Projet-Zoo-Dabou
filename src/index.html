@@ -22,7 +22,7 @@
         background-size: cover;
     }
 </style>
-<body>
+<body class="kanit">
 
     <!--START : header-->
         <nav class="cc-navbar navbar navbar-expand-lg py-0 text-uppercase w-100">
@@ -48,8 +48,13 @@
                 <li class="nav-item pe-4">
                     <a class="nav-link active" href="services.html">Services</a>
                 </li>
-                <li class="nav-item pe-4">
-                    <a class="nav-link active" href="#">Habitats</a>
+                <li class="nav-item pe-4 dropdown">
+                    <a class="nav-link active dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#">Habitats</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="habitats-mini-ferme.html" class="dropdown-item">La mini-ferme</a></li>
+                        <li><a href="habitats-espace-tropical.html" class="dropdown-item">L'espace tropical</a></li>
+                        <li><a href="habitats-felins.html" class="dropdown-item">Les felins</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="#">Contacts</a>
@@ -58,7 +63,7 @@
             
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Se connecter</a>
+                    <a href="connexion.html" class="nav-link">Se connecter</a>
                 </li>
             </ul>
             </div>
@@ -69,8 +74,8 @@
     <!--START : main-->
     <main>
         <!--START : hero-->
-        <section class="p-5 text-light">
-            <div class="container p-5">
+        <section class="text-light">
+            <div class="container pt-5">
                 <div class="clearfix">
                     <img class="col-md-4 w-30 float-md-end mb-3 ms-md-3 img-monkey object-fit-scale" src="assets/img/monkey.svg" alt="Photo d'un petit singe" />
                         <div class="text-align-center">
@@ -142,31 +147,32 @@
                             doloribus eligendi odio nostrum quod, aperiam placeat eaque dolor libero provident beatae neque
                             obcaecati quidem tempore debitis.
                         </p>
-                        <p><a href="#" class="btn btn-order rounded-0 text-light text-uppercase merriweather">Les animaux du parc</a></p>
+                        <p><a href="animals.html" class="btn btn-order rounded-0 text-light text-uppercase merriweather">Les animaux du parc</a></p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="cc-menu merriweather py-5">
+        <section class=" py-5">
 			<div class="container">
 				<div class="row row-cols-1 row-cols-md-2 g-4">
-					<div class="col">
+                    <div class="col d-sm-none d-md-block">
 						<div class="card">
-							<img src="assets/img/le-petit-train.jpg" class="card-img-top" alt="..." />
+							<img src="assets/img/img-mini-ferme.png" class="card-img-top rounded-1" alt="..." />
 							<div class="card-body">
-								<h5 class="card-title text-center">Nos services</h5>
+								<h5 class="card-title"><a href="habitats-mini-ferme.html">La mini-ferme</a></h5>
 								<p class="card-text">
-									Dans un souci de toujours satisfaire les visiteurs, découvrez ce que le parc met à votre disposition.
+									This is a longer card with supporting text below as a natural lead-in to additional content. This
+									content is a little bit longer.
 								</p>
 							</div>
 						</div>
 					</div>
 					<div class="col">
 						<div class="card">
-							<img src="assets/img/felin.jpg" class="card-img-top" alt="..." />
+							<img src="assets/img/img-felin.png" class="card-img-top" alt="..." />
 							<div class="card-body">
-								<h5 class="card-title">Les felins</h5>
+								<h5 class="card-title"><a href="habitats-felins.html">Les felins</a></h5>
 								<p class="card-text">
 									This is a longer card with supporting text below as a natural lead-in to additional content. This
 									content is a little bit longer.
@@ -178,21 +184,20 @@
 						<div class="card">
 							<img src="assets/img/Rhinoceros-indien.jpg" class="card-img-top" alt="..." />
 							<div class="card-body">
-								<h5 class="card-title">Les naissances</h5>
+								<h5 class="card-title"><a href=habitats-espace-tropical.html>L'espace tropical</a></h5>
 								<p class="card-text">
 									This is a longer card with supporting text below as a natural lead-in to additional content.
 								</p>
 							</div>
 						</div>
 					</div>
-					<div class="col d-sm-none d-md-block">
+                    <div class="col">
 						<div class="card">
-							<img src="assets/img/Mini-ferme.jpg" class="card-img-top" alt="..." />
+							<img src="assets/img/le-petit-train.jpg" class="card-img-top" alt="..." />
 							<div class="card-body">
-								<h5 class="card-title">La mini-ferme</h5>
+								<h5 class="card-title text-center"><a href="services.html">Nos services</a></h5>
 								<p class="card-text">
-									This is a longer card with supporting text below as a natural lead-in to additional content. This
-									content is a little bit longer.
+									Dans un souci de toujours satisfaire les visiteurs, découvrez ce que le parc met à votre disposition.
 								</p>
 							</div>
 						</div>
